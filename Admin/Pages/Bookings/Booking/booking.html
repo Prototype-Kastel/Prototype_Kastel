@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
+  
+  
   <title>Aura Kostel</title>
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
-  <link rel="canonical" href="https://www.creative-tim.com/product/argon-dashboard-pro" />
+  
   <!-- Favicon -->
   <link rel="icon" href="../../../assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -26,17 +26,10 @@
   <link rel="stylesheet" href="../../../assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
   <link rel="stylesheet" href="../../../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="../../../assets/vendor/select2/dist/css/select2.min.css">
-
-
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NKDMSK6');</script>
   <!-- End Google Tag Manager -->
 </head>
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
       <!-- Brand -->
@@ -74,25 +67,25 @@
               <div class="collapse" id="booking">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
-                    <a href="../Bookings/Booking/booking.html" class="nav-link">
+                    <a href="../Booking/booking.html" class="nav-link">
                       <span class="sidenav-mini-icon"></span>
                       <span class="sidenav-normal">Booking Room</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../Bookings/Check_in/checkIn.html" class="nav-link">
+                    <a href="../Check_in/checkIn.html" class="nav-link">
                       <span class="sidenav-mini-icon">  </span>
                       <span class="sidenav-normal"> Check In</span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../Bookings/Check_Out/checkOut.html" class="nav-link">
+                    <a href="../Check_Out/checkOut.html" class="nav-link">
                       <span class="sidenav-mini-icon"> </span>
                       <span class="sidenav-normal"> Check Out </span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../Bookings/Payment/payment.html" class="nav-link">
+                    <a href="../Payment/payment.html" class="nav-link">
                       <span class="sidenav-mini-icon">  </span>
                       <span class="sidenav-normal"> Payment </span>
                     </a>
@@ -455,7 +448,7 @@
               </nav>
             </div>
             <div class="col-lg-6 col-5 text-right">
-              <a href="datatables.html#" class="btn btn-sm btn-neutral">Tambah Data</a>
+              <a href="addBooking.html" class="btn btn-sm btn-neutral">Tambah Data</a>
             </div>
           </div>
         </div>
@@ -473,64 +466,47 @@
               <table class="table table-flush" id="datatable-basic">
                 <thead class="thead-light">
                   <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
+                    <th>No</th>
+                    <th>No Booking</th>
+                    <th>Dipesan oleh</th>
+                    <th>Nama Tamu</th>
+                    <th>Tanggal Check in</th>
+                    <th>Tanggal Check Out</th>
+                    <th>Status</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 
                 <tbody>
                   <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
+                    <td>1</td>
+                    <td>000014</td>
+                    <td>Zudha pratama</td>
+                    <td>Yudha Bachtiar</td>
+                    <td>31 Mei 2021</td>
+                    <td>08 Juni 2021</td>
+                    <td><span class="badge badge-danger">Belum Di bayar</span></td>
                     <td>
-                        <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
+                        <a href="editBooking.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011/07/25</td>
+                    <td>2</td>
+                    <td>000015</td>
+                    <td>Tanwirul Qulub</td>
+                    <td>Yudha Bachtiar</td>
+                    <td>31 Mei 2021</td>
+                    <td>08 Juni 2021</td>
+                    <td><span class="badge badge-primary">Masih Diproses</span></td>
                     <td> 
-                        <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
+                        <a href="editBooking.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
+                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                     </td>
                   </tr>
-                  <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009/01/12</td>
-                    <td>
-                        <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012/03/29</td>
-                    <td>
-                    <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-success btn-sm"><i class="fas fa-edit"></i></button>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-                    </td>
-                  </tr>
+                 
                 
                 </tbody>
               </table>
@@ -651,8 +627,116 @@
     });
    
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
-  </noscript>
+  
 </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Data Booking</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+              <label for="" class="text-blue"><b>No Booking</b> </label>
+              <p>B00017</p>
+            </div>
+            <div class="col-md-6">
+              <label for="" class="text-blue"><b>Tanggal Booking</b></label>
+              <p>29 Mei 2021</p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="" class="text-blue"><b>Segment</b> </label>
+            <p>Umum</p>
+          </div>
+          <div class="col-md-6">
+            <label for="" class="text-blue"><b>Order Via</b></label>
+            <p>Online</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="" class="text-blue"><b>Tanggal Check In</label>
+          <p>B00017</p>
+        </div>
+        <div class="col-md-6">
+          <label for="" class="text-blue"><b>Tanggal Booking</b></label>
+          <p>29 Mei 2021</p>
+        </div>
+      </div>
+      <div>
+        <label for="" class="text-blue"><b>Status</b></label>
+        <p><span class="badge badge-primary">available</span></p>
+      </div>
+      <label for="" class="text-blue"><b>Data Kamar</b></label>
+      <div class="table-responsive py-4">
+        <table class="table table-flush">
+          <thead class="thead-light">
+            <tr>
+              <th>No</th>
+              <th>Room type</th>
+              <th>Room Number</th>
+              <th>Flor</th>
+              <th>Price</th>
+              <th>Ekstra Service</th>
+              
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Medium</td>
+              <td>B17</t>
+              <td>3</td>
+              <td>Rp.300.000</td>
+              <td><span class="badge badge-info">setrika , kipas angin</span></td>
+            </tr>    
+          </tbody>
+        </table>
+      </div>
+
+      <label for="" class="text-blue">Data Tamu</label>
+      <div class="table-responsive py-4">
+        <table class="table table-flush">
+          <thead class="thead-light">
+            <tr>
+              <th>No</th>
+              <th>nama tamu</th>
+              <th>Alamat</th>
+              <th>telefon</th>
+              <th>Email</th>
+              <th> ID Card photos</th>
+              
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Zudha pratama</td>
+              <td>jln pare ds krenceng kec kepung kab kediri</t>
+              <td>+6285784260416</td>
+              <td>zudhapratama123@gmail.com</td>
+              <td></td>
+            </tr>    
+          </tbody>
+        </table>
+      </div>
+
+        
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
