@@ -4,6 +4,9 @@ body {
     font-family: "Cabin", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
+}
+
+a {
     text-decoration: none;
 }
 
