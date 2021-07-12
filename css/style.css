@@ -4,6 +4,7 @@ body {
     font-family: "Cabin", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    text-decoration: none;
 }
 
 h1,
