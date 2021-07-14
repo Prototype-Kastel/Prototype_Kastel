@@ -446,8 +446,7 @@
                   </nav>
                 </div>
                 <div class="col-lg-6 col-5 text-right">
-                  <a href="addCustomer.html" class="btn btn-sm btn-neutral">New</a>
-                  
+                  <a href="addCustomer.html" class="btn btn-sm btn-neutral">Tambah Data</a>
                 </div>
               </div>
             </div>
@@ -484,7 +483,7 @@
                     <img src="../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
                   </td>
                   <td>
-                      <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                       <a href="editCustomer.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                       <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                   </td>
@@ -498,7 +497,7 @@
                     <img src="../assets/img/theme/team-1.jpg" class="avatar rounded-circle mr-3">
                   </td>
                   <td> 
-                      <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                       <a href="editCustomer.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                       <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                   </td>
@@ -599,3 +598,46 @@
 
   </body>
 </html>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable  " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Data Customer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="media">
+            <img src="../assets/img/theme/team-1.jpg" class="  mr-3" alt="..." width="200px" height=200px">
+            <div class="media-body">
+              <label for=""><b>Nama</b></label>
+              <p>zudha pratama</p>
+              <label for=""><b>Birthday</b></label>
+              <p>31 Mei 1999</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for=""><b>Email</b></label>
+            <p>zudhapratama123@gmail.com</p>
+            <label for=""><b>Phone</b></label>
+            <p>085784260416</p>
+            <label for=""><b>City</b></label>
+            <p>Kediri</p>
+            <label for=""><b>Region</b></label>
+            <p>Jawa Timur</p>
+            <label for=""><b>Address</b></label>
+            <p>Dsn Kwagean Ds Krenceng Kec Kepung Kab Kediri Jawa Timur</p>
+            <label for=""><b>Notes</b></label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium odio esse perspiciatis eligendi dolore laborum ratione! In commodi autem quas voluptatibus praesentium est, mollitia officiis, velit nostrum animi nemo nam.</p>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

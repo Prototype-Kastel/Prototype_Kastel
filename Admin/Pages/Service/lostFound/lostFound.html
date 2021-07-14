@@ -487,9 +487,9 @@
                     <td>Dompet , Kunci</td>
                     <td><span class="badge badge-danger">waiting</span></td>
                     <td>
-                        <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                         <a href="editLostFound.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -501,9 +501,9 @@
                     <td>Dompet , Kunci</td>
                     <td><span class="badge badge-danger">waiting</span></td>
                     <td> 
-                        <button class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></button>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                         <a href="editLostFound.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                        <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                     </td>
                   </tr>
                  
@@ -631,3 +631,64 @@
   </noscript>
 </body>
 </html>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Data Status Room </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+           <div class="row">
+             <div class="col">
+               <label for=""><b>Nama</b></label>
+              <p>Zudha Pratama</p>
+              <label for=""><b>Room Type</b></label>
+              <p>Medium</p>
+             </div>
+             <div class="col">
+               <label for=""><b>Room Name</b></label>
+               <p>Bougenfil Indah</p>
+               <label for="">Floor</label>
+               <p>3</p>
+             </div>
+           </div>
+          </div>
+
+         <div class="form-group">
+           <label for=""><b>Lost</b></label>
+           <ul>
+             <li>Handuk</li>
+             <li>Tv</li>
+             <li>Buku</li>
+             <li>Lampu</li>
+             <li>Hiasan</li>
+             <li>Bantal</li>
+           </ul>
+
+         </div>
+         <div class="form-group">
+          <label for=""><b>Found</b></label>
+          <ul>
+            <li>Dompet</li>
+            <li>Uang</li>
+            <li>Buku</li>
+            <li>Lampu</li>
+           
+          </ul>
+          <div class="form-group">
+            <label for=""><b>Status</b></label>
+            <p><span class="badge badge-primary">Success</span></p>
+          </div>
+       
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
