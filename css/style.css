@@ -536,6 +536,7 @@ ol {
     display: inline-block;
     margin-left: 43px;
     padding: 1px 0px;
+    cursor: pointer;
 }
 
 .menu-item .nav-menu .nav-right a {
