@@ -2125,7 +2125,7 @@ ol {
     background-color: #d6985b;
     color: white;
     text-align: center;
-    border-radius: 0px 0px 8px 0px;
+    border-radius: 0px 0px 8px px;
 }
 
 .card-room .col-md-4 a:hover {
@@ -2138,7 +2138,7 @@ ol {
 
 }
 .card-room .col-md-4 .harga-room p {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-size: 20px;
 }
 @media only screen and (max-width: 991px) {
