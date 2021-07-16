@@ -2086,7 +2086,7 @@ ol {
 }
 
 .card-room .col-md-5 {
-    padding: 8px 30px;
+    padding: 14px 30px;
 }
 
 .card-room .col-md-5 p {
@@ -2113,7 +2113,7 @@ ol {
 }
 
 .card-room .col-md-4 .harga-room {
-    padding: 8px 20px;
+    padding: 14px 30px;
 }
 
 .card-room .col-md-4 a {
@@ -2140,7 +2140,7 @@ ol {
     font-size: 20px;
 }
 @media only screen and (max-width: 991px) {
-    .top-nav {
+    .card-room .top-nav {
         display: none;
     }
     
@@ -2437,6 +2437,14 @@ ol {
     .hero-text {
         margin-bottom: 40px;
     }
+    
+    .card-room {
+        height: 850px;
+    }
+    
+    .img-cover {
+        height: 300px;
+    }
 }
 
 /* Tablet Device: 768px */
@@ -2456,12 +2464,28 @@ ol {
     .hp-room-item {
         margin-bottom: 15px;
     }
+    
+    .card-room {
+        height: 850px;
+    }
+    
+    .img-cover {
+        height: 300px;
+    }
 }
 
 /* Large Mobile: 480px */
 @media only screen and (max-width: 767px) {
     .testimonial-slider.owl-carousel .owl-nav {
         display: none;
+    }
+    
+    .card-room {
+        height: 850px;
+    }
+    
+    .img-cover {
+        height: 300px;
     }
     
     .room-details-item .rd-text .rd-title {
