@@ -2083,6 +2083,7 @@ ol {
 .card-room .col-md-3 img {
     height: 100%;
     object-fit: cover;
+    border-radius: 8px 0px 0px 8px;
 }
 
 .card-room .col-md-5 {
@@ -2124,6 +2125,7 @@ ol {
     background-color: #d6985b;
     color: white;
     text-align: center;
+    border-radius: 0px 0px 8px 0px;
 }
 
 .card-room .col-md-4 a:hover {
@@ -2445,6 +2447,14 @@ ol {
     .img-cover {
         height: 300px;
     }
+    
+    .card-room .col-md-3 img {
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .card-room .col-md-4 a {
+        border-radius: 0px 0px 8px 8px;
+    }
 }
 
 /* Tablet Device: 768px */
@@ -2472,6 +2482,14 @@ ol {
     .img-cover {
         height: 300px;
     }
+    
+    .card-room .col-md-3 img {
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .card-room .col-md-4 a {
+        border-radius: 0px 0px 8px 8px;
+    }
 }
 
 /* Large Mobile: 480px */
@@ -2486,6 +2504,14 @@ ol {
     
     .img-cover {
         height: 300px;
+    }
+    
+    .card-room .col-md-3 img {
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .card-room .col-md-4 a {
+        border-radius: 0px 0px 8px 8px;
     }
     
     .room-details-item .rd-text .rd-title {
