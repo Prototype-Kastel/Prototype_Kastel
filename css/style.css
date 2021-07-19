@@ -2628,3 +2628,15 @@ ol {
 .signup-section {
     padding: 0.3rem 0rem;
 }
+
+/* Dashboard User */
+.navbar-left {
+    position: fixed;
+    z-index: 1;
+}
+.navbar-left h4 {
+    padding-top: 7px;
+}
+.navbar-left a .col-lg-8 {
+    vertical-align: middle;
+}
