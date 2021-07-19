@@ -76,6 +76,12 @@
         navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"]
     });
 
+    /*------------------
+        Magnific Popup
+    --------------------*/
+    $('.video-popup').magnificPopup({
+        type: 'iframe'
+    });
 
     /*------------------
 		Date Picker
