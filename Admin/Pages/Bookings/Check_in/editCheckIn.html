@@ -454,11 +454,11 @@
                 </div>
                 <div class="row">   
                     <div class="col-md-6">
-                        <label for="">Start Date</label>
+                        <label for="">Check In</label>
                         <input type="date" class="form-control" >
                     </div>
                     <div class="col-md-6">
-                        <label for="">End Date</label>
+                        <label for="">Check Out</label>
                         <input type="date" class="form-control"> 
                     </div>
                 </div>
@@ -468,74 +468,87 @@
             <div class="form-group py-2">
                     <label for="">Data Tamu</label>
                     <div class="form-group" style="float: right">
-                        <a class="addTamu btn btn-primary btn-sm" style="color: white">Tambah data</a>
+                      <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addtamu">Tambah Data</button>
                     </div>
-                <div class="table-responsive py-4">
-                  <table class="table table-flush">
-                        <thead>
+                     <div class="table-responsive py-4">
+                        <table class="table table-flush">
+                          <thead class="thead-light">
                             <tr>
-                                <th>Nama Tamu</th>
-                                <th>address</th>
-                                <th>Phone</th>
-                                <th>Email</th>
-                                <th>Id Card</th>
-                                <th>Action</th>
+                              <th>No</th>
+                              <th>Nama Tamu</th>
+                              <th>Address</th>
+                              <th>Email</th>
+                              <th>Phone</th>
+                              <th>id card photo </th>
+                              <th>Action</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                          </thead>
+                          
+                          <tbody>
                             <tr>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="text"></td>
-                                <td><input type="file"></td>
-                                <td>
-                                    <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
-                                </td>
-                                
+                                <td class="py-3">1</td>
+                              <td>
+                                Zudha Pratama
+                              </td>
+                              <td>Kediri</td>
+                              <td>zudhapratama123@gmail.com</td>
+                              <td>+6285784260416</td>
+                              <td></td>
+                              <td class="py-3">
+                                 <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addtamu"><i class="fas fa-edit"></i></button>
+                                  <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+    
+                              </td>
                             </tr>
-                        </tbody>
-
-                    </table>
-                </div>
+                                <div class="Tamu"></div>    
+                          </tbody>
+                        </table>
+                    </div>
             </div>
 
             <div class="form-group mt-2">
                 <label for="">Data Ruangan</label>
                 <div class="form-group" style="float: right">
-                    <a class="addRoom btn btn-primary btn-sm" style="color: white">Tambah data</a>
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addkamar">Tambah Data</button>
                 </div>
-            <div class="table-responsive py-4">
-              <table class="table table-flush">
-                    <thead>
+                 <div class="table-responsive py-4">
+                    <table class="table table-flush">
+                      <thead class="thead-light">
                         <tr>
-                            <th>Room Type</th>
-                            <th>Name room</th>
-                            <th>Floor</th>
-                            <th>Action</th>
+                          <th>No</th>
+                          <th>Room Type</th>
+                          <th>Room Number</th>
+                          <th>Floor</th>
+                          <th>Price</th> 
+                          <th>Action</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                      </thead>
+                      
+                      <tbody>
                         <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
-                           
-                            <td>
-                                <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
-                            </td>
+                            <td class="py-3">1</td>
+                          <td>
+                            Medium
+                          </td>
+                          <td>B17</td>
+                          <td>3</td>
+                          <td>Rp.300.000</td>
+                          
+                          <td class="py-3">
+                              <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addkamar"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                              
+                          </td>
+                        </tr>
                             
-                        </tr>
-                        <div class="room"></div>
-                    </tbody>
-
-                </table>
-            </div>
+                      </tbody>
+                    </table>
+                </div>
             <div class="row">
                 <div class="col-md-8">
                     <div class="form-group">
                         <label for="">Tambah Ekstra Service</label>
-                        <select class="form-control"  type="text" id="tags"  multiple>
+                        <select name="" type="text" id="tags" class="form-control"  multiple>
                             <option value="1">Wifi</option>
                             <option value="2">Kamar Mandi Dalam</option>
                             <option value="3">Parkir luas</option>
@@ -700,9 +713,84 @@
       var addroom ='<tr><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button></td></tr>';
       $('.room').append(addroom);
     };
+   
   </script>
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
   </noscript>
 </body>
 </html>
+
+<!-- add Kamar -->
+<div class="modal fade" id="addkamar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Kamar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Room Type</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Room Number</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Floor</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Price</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- addtamu -->
+<div class="modal fade" id="addtamu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Tamu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Nama Tamu</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Address</label>
+          <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Phone</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">ID Card</label>
+          <input type="file" class="form-control">
+        </div> 
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">save</button>
+      </div>
+    </div>
+  </div>
+</div>

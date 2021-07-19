@@ -471,14 +471,14 @@
                       <div class="col-md-6">
                           <div class="form-group">
                               <label for="">Segmen</label>
-                              <input type="text" class="form-control">
+                              <input type="text" class="form-control" value="umum">
                             </div>
                       </div>
                       <div class="col-md-6">
                           <label for="">Order Via</label>
                           <select name="" id="" class="form-control">
-                              <option value="" disabled selected>Choose one</option>
-                              <option value="">Online</option>
+                              
+                              <option value="" selected>Online</option>
                               <option value="">Offline</option>
                           </select>
                       </div>
@@ -497,7 +497,7 @@
                  </div>
                 <label for="">Tambah Pesanan Kamar</label>
                 <div class="form-group" style="float: right">
-                    <a class="addTable btn btn-primary btn-sm" style="color: white">Tambah data</a>
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addkamar">Tambah Data</button>
                 </div>
                  <div class="table-responsive py-4">
                     <table class="table table-flush">
@@ -517,24 +517,26 @@
                         <tr>
                             <td class="py-3">1</td>
                           <td>
-                            <input type="text"  value="Type A" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            Medium
                           </td>
-                          <td><input type="text"  value="B17" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
-                          <td><input type="text"  value="2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
-                          <td><input type="text"  value="Rp.230.000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
-                          <td><input type="text"  data-toggle="tags" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+                          <td>B17</td>
+                          <td>3</td>
+                          <td>Rp.300.000</td>
+                          <td>Kipas Angin , Megicom , Setrika</td>
                           <td class="py-3">
+                              <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addkamar"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                              
                           </td>
                         </tr>
-                            <div class="dataRoom"></div>    
+                            
                       </tbody>
                     </table>
                 </div>
                 <br><br>
                 <label for="">Tambah Tamu</label>
                 <div class="form-group" style="float: right">
-                    <a class="addtamu btn btn-primary btn-sm" style="color: white">Tambah data</a>
+                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addtamu">Tambah Data</button>
                 </div>
                  <div class="table-responsive py-4">
                     <table class="table table-flush">
@@ -554,14 +556,16 @@
                         <tr>
                             <td class="py-3">1</td>
                           <td>
-                            <input type="text"  value="Type A" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            Zudha Pratama
                           </td>
-                          <td><input type="text"  value="B17" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
-                          <td><textarea name="" id="" cols="15" rows="3"></textarea></td>
-                          <td><input type="text"  value="Rp.230.000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
-                          <td><input type="file"   aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+                          <td>Kediri</td>
+                          <td>zudhapratama123@gmail.com</td>
+                          <td>+6285784260416</td>
+                          <td></td>
                           <td class="py-3">
+                             <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#addtamu"><i class="fas fa-edit"></i></button>
                               <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+
                           </td>
                         </tr>
                             <div class="Tamu"></div>    
@@ -736,3 +740,81 @@
   
 </body>
 </html>
+
+<!-- add Kamar -->
+<div class="modal fade" id="addkamar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Kamar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Room Type</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Room Number</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Floor</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Price</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Ekstra Service</label>
+          <input type="text" class="form-control">
+        </div> 
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- addtamu -->
+<div class="modal fade" id="addtamu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Tamu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Nama Tamu</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Address</label>
+          <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Phone</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">ID Card</label>
+          <input type="file" class="form-control">
+        </div> 
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">save</button>
+      </div>
+    </div>
+  </div>
+</div>
