@@ -501,7 +501,7 @@
                     <td>08 Juni 2021</td>
                     <td><span class="badge badge-danger">Unpaid</span></td>
                     <td> 
-                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
+                       <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                         <a href="editBooking.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
                         <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
                     </td>
@@ -768,3 +768,64 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Upload Bukti Pembayaran</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            
+            
+            
+          <div class="row">
+              <div class="col-md-6">
+                  <label for="">Via E-Wallet</label>
+                  <hr>
+                  <p>OVO:085704604616</p>
+                  <p>Dana:085704604616</p>
+                  <p>Gopay:085704604616</p>
+
+              </div>
+              <div class="col-md-6">
+                  <label for="">Via Transfer Bank</label>
+                  <hr>
+                  <p>Mandiri : 21031910479087</p>
+                  <p>Mandiri : 31031910479087</p>
+                  <p>Mandiri : 41031910479087</p>
+              </div>
+          </div>
+          
+        </div>
+        <span class="alert alert-info">
+            <div class="container">
+                <p>Lakukan Pembayaran sebelum jam 14.00 , pesanan akan di di batalkan jika belum membayarar sesuai jam tersebut</p>
+            </div>
+        </span>
+        <div class="container">
+            <div class="form-group">
+                <label for=""><b>Upload Bukti Pembayaran</b></label>
+                <input type="file" class="form-control">
+                
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Upload</button>
+                <button class="btn btn-secondary btn-block">Hubungi Admin</button>
+            </div>
+            <hr>
+            
+
+        </div>
+       
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
