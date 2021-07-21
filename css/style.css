@@ -639,13 +639,22 @@ ol {
 
 .booking-form {
     background: #ffffff;
-    padding: 44px 40px 50px 40px;
+    padding: 44px 15px 50px 15px;
     border-radius: 4px;
 }
 
-.booking-form h3 {
+.home-card {
+    padding: 20px 25px 20px 25px;
+}
+
+.booking-form h4 {
     color: #19191a;
     margin-bottom: 36px;
+    text-align: center;
+}
+
+hr.line {
+    border-top: 1px solid #dfa974;
 }
 
 .booking-form form .check-date {
@@ -2637,6 +2646,16 @@ ol {
 .navbar-left h4 {
     padding-top: 7px;
 }
-.navbar-left a .col-lg-8 {
-    vertical-align: middle;
+.navbar-left a {
+    margin: 40px 0px;
+}
+.navbar-left a img {
+    width: 40px;
+    text-align: right;
+    float: left;
+    margin-right: 15px;
+}
+.navbar-left a p {
+    font-size: 20px;
+    padding: 8px 15px;
 }
