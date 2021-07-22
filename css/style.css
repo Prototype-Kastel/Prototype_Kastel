@@ -2659,3 +2659,11 @@ hr.line {
     font-size: 20px;
     padding: 8px 15px;
 }
+.bar-desktop {
+    display: block;
+}
+@media only screen and (max-width: 780px) {
+    .bar-desktop {
+        display: none;
+    }
+}

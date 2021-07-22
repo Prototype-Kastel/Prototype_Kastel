@@ -1,0 +1,46 @@
+.bar-desktop {
+    display: block;
+}
+
+.back-mobile {
+    display: none;
+    font-size: 40px;
+    color: white;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.navbar-mobile {
+    background-color: white;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    bottom: 0;
+    left: 0%;
+    z-index: 5;
+    position: fixed;
+    display: none;
+    width: 100%;
+}
+
+.navbar-mobile .row .col-3 i {
+    text-align: center;
+    font-size: 30px;
+    padding: 10% 40%;
+    cursor: pointer;
+}
+
+div.mobile-dashboard {
+    background-color: rgb(223, 223, 223);
+}
+
+@media only screen and (max-width: 760px) {
+    .bar-desktop {
+        display: none;
+    }
+    .header-mobile {
+        padding-bottom: 0;
+    }
+    .back-mobile,
+    .navbar-mobile {
+        display: block;
+    }
+}
