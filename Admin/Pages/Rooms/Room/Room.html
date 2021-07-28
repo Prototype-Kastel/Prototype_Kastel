@@ -472,7 +472,7 @@
                     <th>No Room</th>
                     <th>Room Type</th>
                     <th>floor</th>
-                    <th>Room Price</th>
+                    
                     <th>Status</th>
                     <th>Action</th>
                   </tr>
@@ -481,10 +481,12 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>B18</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#price">B17</button>
+                    </td>
                     <td>Medium</td>    
                     <td>3</td>
-                    <td>Rp.350.000</td>
+                    
                     <td><span class="badge badge-primary">Vacant Clean</span> </td>
                     <td>
                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
@@ -494,10 +496,12 @@
                   </tr>
                   <tr>
                     <td>2</td>
-                    <TD>B17</TD>
+                    <TD>
+                      <button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#price">B17</button>
+                    </TD>
                     <td>Large</td>
                     <td>3</td>
-                    <td>Rp/500.000</td>
+                    
                     <td><span class="badge badge-info">Occupied</span></td>
 
                     <td> 
@@ -653,7 +657,6 @@
           <div class="row mt-3">
               <div class="col-md-6">
                   <p>Room Type : Medium</p> 
-                  <p>Room Price: Rp.300.000</p>
               </div>
               <div class="col-md-6">
                   <p>floor: 3</p> 
@@ -663,16 +666,64 @@
           <label for="" class="text-blue">Fasilitas</label>
           <div class="row mt-3">
               <div class="col-md-4">
-                  <p>Wifi</p>
-                  <p>Kamar mandi dalam</p>
+                  <p><i class="fas fa-wifi text-success"></i> Wifi</p>
+                  <p><i class="fas fa-bath text-success"></i> Kamar mandi dalam</p>
               </div>
               <div class="col=md-4">
-                  <p> Setrika</p>
-                  <p>Kolam Renang</p>
+                  <p><i class="fas fa-hotel text-success"></i> Setrika</p>
+                  <p><i class="fas fa-home text-success"></i> Kolam Renang</p>
               </div>
           </div>
 
       </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Data Room</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+              <label for="" class="text-primary"><b>Name Price</b> </label>
+              <p>Hotel</p>
+              <label for="" class="text-primary"><b>Price Type</b> </label>
+              <p>Harian</p>
+              <label for="" class="text-primary"><b>Price</b> </label>
+              <p>Rp. 300.000</p>
+              <label for="" class="text-primary"><b>Start Date</b> </label>
+              <p>31 Mei 2021</p>
+          </div>
+          <div class="col-md-6">
+              <label for="" class="text-primary"><b>Room Type</b> </label>
+              <p>B17</p>
+              <label for="" class="text-primary"><b>Durations</b> </label>
+              <p>30 Hari</p>
+              <label for="" class="text-primary"><b>Promo Code</b> </label>
+              <p>B17ABC</p>
+              <label for="" class="text-primary"><b>End Date</b> </label>
+              <p>08 Juni 2021</p>
+          </div>
+        </div>
+          <div >
+              <label for="" class="text-primary"><b>Notes</b> </label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam vel, sit nesciunt explicabo hic error magni dignissimos fugiat voluptatibus nisi, doloremque tempora labore nulla in itaque ipsa sint optio!</p>
+          </div>
+
+        
+      </div>
+   
       <div class="modal-footer">
       <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
       </div>

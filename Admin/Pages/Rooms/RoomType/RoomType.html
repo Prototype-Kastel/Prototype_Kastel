@@ -475,19 +475,21 @@
                     <th>Capacity</th>
                     <th>Size</th>
                     <th>Bed Type</th>
-                    <th>Status</th>
+                    <th>Availability</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Large</td>
+                    <td>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#price">Standard Room</button>
+                    </td>
                     <td>All</td>
                     <td>5</td>
                     <td>Double bed</td>
                     <td>3 x 4</td>
-                    <td><span class="badge badge-info">Available</span></td>
+                    <td><span class="badge badge-info badge-lg">5/10</span></td>
                     <td>
                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                         <a href="editRoomType.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
@@ -496,12 +498,14 @@
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Medium</td>
+                    <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#price">Standard Room</button>                    
+                    </td>
                     <td>Male</td>
                     <td>3</td>
                     <td>Single Bed</td>
                     <td>3 x 4</td>
-                    <td><span class="badge badge-info">Available</span></td>
+                    <td><span class="badge badge-info badge-lg">6/10</span></td>
                     <td> 
                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-eye"></i></button>
                         <a href="editRoomType.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
@@ -680,6 +684,53 @@
               <p>this is for notes</p>
           </div>
       </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="price" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Data Room</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+              <label for="" class="text-primary"><b>Name Price</b> </label>
+              <p>Hotel</p>
+              <label for="" class="text-primary"><b>Price Type</b> </label>
+              <p>Harian</p>
+              <label for="" class="text-primary"><b>Price</b> </label>
+              <p>Rp. 300.000</p>
+              <label for="" class="text-primary"><b>Start Date</b> </label>
+              <p>31 Mei 2021</p>
+          </div>
+          <div class="col-md-6">
+              <label for="" class="text-primary"><b>Room Type</b> </label>
+              <p>B17</p>
+              <label for="" class="text-primary"><b>Durations</b> </label>
+              <p>30 Hari</p>
+              <label for="" class="text-primary"><b>Promo Code</b> </label>
+              <p>B17ABC</p>
+              <label for="" class="text-primary"><b>End Date</b> </label>
+              <p>08 Juni 2021</p>
+          </div>
+        </div>
+          <div >
+              <label for="" class="text-primary"><b>Notes</b> </label>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ullam vel, sit nesciunt explicabo hic error magni dignissimos fugiat voluptatibus nisi, doloremque tempora labore nulla in itaque ipsa sint optio!</p>
+          </div>
+
+        
+      </div>
+   
       <div class="modal-footer">
       <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
       </div>

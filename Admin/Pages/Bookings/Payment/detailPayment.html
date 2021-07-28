@@ -61,7 +61,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#booking" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="booking">
+              <a class="nav-link" href="#booking" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="booking">
                 <i class="ni ni-ungroup text-orange"></i>
                 <span class="nav-link-text">Booking</span>
               </a>
@@ -85,8 +85,8 @@
                       <span class="sidenav-normal"> Check Out </span>
                     </a>
                   </li>
-                  <li class="nav-item active">
-                    <a href="../Payment/payment.html" class="nav-link">
+                  <li class="nav-item">
+                    <a href="../Payment/payment.html" class="nav-link active">
                       <span class="sidenav-mini-icon">  </span>
                       <span class="sidenav-normal"> Payment </span>
                     </a>
@@ -436,23 +436,6 @@
     <!-- header -->
     <div class="header bg-primary pb-6">
       <div class="container-fluid">
-        <div class="header-body">
-          <div class="row align-items-center py-4">
-            <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Payment</h6>
-              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
-                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="datatables.html#"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="datatables.html#">Tables</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Payment</li>
-                </ol>
-              </nav>
-            </div>
-            <div class="col-lg-6 col-5 text-right">
-              <a href="addPayment.html" class="btn btn-sm btn-neutral">Tambah Data Payment</a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div class="container-fluid mt--6">
@@ -461,49 +444,86 @@
         <div class="card">
             <!-- Card header -->
             <div class="card-header">
-              <h3 class="mb-0">Payment</h3>
+              <h3 class="mb-0">Datatable Payment</h3>
             </div>
-            <div class="table-responsive py-4">
-              <table class="table table-flush" id="datatable-basic">
-                <thead class="thead-light">
-                  <tr>
-                    <th>No</th>
-                    <th>No Booking</th>
-                    <th>Nama Tamu</th>
-                    <th>Nama Room</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>B00017</td>
-                    <td>Zudha Pratam</td>
-                    <td>B17</td>
-                    <td><span class="badge badge-danger">DP</span></td>
-                    <td>
-                        <a href="detailPayment.html" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="editPayment.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>B0019</td>
-                    <td>Zudha Pratama</td>
-                    <td>B18</td>
-                    <td><span class="badge badge-danger">DP</span></td>
-                    <td> 
-                      <a href="detailPayment.html" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
-                        <a href="editPayment.html" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a>
-                        <button class="btn btn-danger btn-sm" data-toggle="sweet-alert" data-sweet-alert="confirm"><i class="fas fa-trash"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">No Booking </label>
+                        <input type="text" class="form-control" value="B1007" disabled>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Nama Tamu </label>
+                        <input type="text" class="form-control" value="zudha pratama" disabled>
+                    </div> 
+                </div>
+              </div>
+              <div class="form-group">
+                  <label for="">Total Tagihan</label>
+                  <input type="text" class="form-control" value="Rp.300.000" disabled>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="">Payment Type </label>
+                      <input type="text" class="form-control" value="Ovo" disabled>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="">Phone Number </label>
+                      <input type="text" class="form-control" value="085743256761" disabled>
+                  </div> 
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Account Number </label>
+                    <input type="text" class="form-control" value="" disabled>
+                </div> 
+             </div>
+              </div>
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="">Bank </label>
+                      <input type="text" class="form-control" value="" disabled>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="">Tax </label>
+                      <input type="text" class="form-control" value="5%" disabled> 
+                  </div> 
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                    <label for="">Payment Date </label>
+                    <input type="date" class="form-control" value="21 Mei 2021" disabled>
+                </div> 
+              </div>
             </div>
+            
+                <div class="form-group">
+                    <label for="">Attachment</label>
+                    <input type="file" class="form-control" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="">Status</label>
+                    <select name="" id="" class="form-control" disabled>
+                        <option value="" selected>Dp</option>
+                        <option value="">Deposite</option>
+                        <option value="">Pelunasan</option>
+                    </select>
+                </div>
+            <div class="form-group">    
+              <button class="btn btn-primary">Save</button>
+              <button class="btn btn-neutral">Reset</button>
+            </div>
+              
+          </div>
           </div>
     
         </div>
@@ -625,70 +645,3 @@
   </noscript>
 </body>
 </html>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Data Booking</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6">
-            <label for=""><b>No Booking</b></label>
-            <p>B10007</p>
-          </div>
-          <div class="col-md-6">
-            <label for=""><b>Nama Tamu</b></label>
-            <p>Zudha Pratama</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label for=""><b>Payment Type</b></label>
-            <p>Transfer Bank</p>
-          </div>
-          <div class="col-md-4">
-            <label for=""><b>Phone Number</b></label>
-            <p>2103191047</p>
-          </div>
-          <div class="col-md-4">
-            <label for=""><b>Account Number</b></label>
-            <p>2103191047</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label for=""><b>Bank</b></label>
-            <p>Mandiri</p>
-          </div>
-          <div class="col-md-4">
-            <label for=""><b>Tax</b></label>
-            <p>5%</p>
-          </div>
-          <div class="col-md-4">
-            <label for=""><b>Payment Date</b></label>
-            <p>29 May 2021</p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="">Attachment</label> <br>
-          <img src="../../../../img/kamar.jpg" alt="" width="200px" height="200px">
-        </div>
-        <div class="form-group">
-          <label for="">Status</label> 
-          <p><span class="badge badge-primary">Deposite</span></p>
-        </div>
-        
-          
-      </div>
-      <div class="modal-footer">
-      <button type="button" class="btn btn-info btn-sm" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
